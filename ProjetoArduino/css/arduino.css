@@ -1,0 +1,113 @@
+body{
+    background-color: #f5f3f4;
+}
+.content{
+    width: 80%;
+    margin: 0px auto;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Tahoma;
+    justify-content: middle;
+    line-height: 1em;
+    margin-bottom: 20px;
+}
+.header h1 {
+    font-size: 2.5em;
+    color: #717171;
+}
+.header h3 {
+    font-size: 1.2em;
+    color: #6246dd;   
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.blocoLampada{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 445px;
+}
+.lampadaImg{
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 283px;
+    border: 1px solid #DCDCDC;
+}
+
+.Desligado{
+    background-image: url("http://localhost:8080/ProjetoArduino/images/lampadaDesligada.png");
+}
+
+.Ligado { 
+    background-image: url("http://localhost:8080/ProjetoArduino/images/lampadaLigada.png") !important;    
+}
+
+.painelBotoes{ 
+    display: flex;
+    width: 100%;
+}
+.painelBotoes a {
+    flex-grow: 1;
+    width: 50%;
+    height: 50px;
+    border: 1px solid #DCDCDC;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #efecfd;
+    color: #6347d8;
+}
+
+.Ativo{
+    background-color: #9bd4ab !important;
+    color: #fff !important;
+}
+
+.lampadaTitulo {
+    color: #6347d8;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+@media (min-width: 768px){
+
+}
+
+@media (max-width: 1024px) {
+    .blocoLampada{
+        width: 280px;
+        flex-grow: 0;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 425px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .content{
+        margin: 0px;
+        width: 100%;
+    }
+
+    .header h1 {
+        line-height: 1em;
+        font-size: 1.9em;
+    }
+    .header h3  {
+        line-height: 1.3em;
+        font-size: 1em;
+    }
+    .blocoLampada{
+        width: 100%;
+    }
+}
